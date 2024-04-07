@@ -13,21 +13,21 @@ export default function Header() {
   return (
     <>
       <div className="flex justify-between items-center py-4 ">
-        <div className="text-3xl font-sans font-bold pl-12 ">
+        <div className="text-3xl font-sans font-bold pl-12 text-[#0f172a]">
           <h1>Logo.</h1>
         </div>
 
-        <div className="text-xl pr-12 md:block hidden">
-          <Link className="p-4" to="">
+        <div className="text-lg font-bold pr-12 md:block hidden">
+          <Link className="p-4 hover:text-[#1e2d4f]" to="">
             Home
           </Link>
-          <Link className="p-4" to="/services">
+          <Link className="p-4 hover:text-[#1e2d4f]" to="/services">
             Services
           </Link>
-          <Link className="p-4" to="/about">
+          <Link className="p-4 hover:text-[#1e2d4f]" to="/about">
             About
           </Link>
-          <Link className="p-4" to="/contact">
+          <Link className="p-4 hover:text-[#1e2d4f]" to="/contact">
             Contact
           </Link>
         </div>
@@ -37,12 +37,12 @@ export default function Header() {
         </div>
       </div><hr />
  
-      <div className={`absolute md:hidden p-5 h-screen w-full bg-black text-white right-[-100%] duration-300 text-center ${toggle ? 'right-0' : 'right-[-100%]'}`}>
+      <div className={` absolute md:hidden p-5 h-screen w-full bg-black text-white duration-300 text-center ${toggle ? 'right-0' : 'right-[-100%]'}`}>
          <ul>
-            <li className='p-7'><Link to="">Home</Link></li>
-            <li className='p-7'><Link to="/services">Services</Link></li>
-            <li className='p-7'><Link to="/about">About</Link></li>
-            <li className='p-7'><Link to="/contact">Contact</Link></li>
+            <li className='p-7 hover:text-[#1e2d4f]'><Link to="">Home</Link></li>
+            <li className='p-7 hover:text-[#1e2d4f]'><Link to="/services">Services</Link></li>
+            <li className='p-7 hover:text-[#1e2d4f]'><Link to="/about">About</Link></li>
+            <li className='p-7 hover:text-[#1e2d4f]'><Link to="/contact">Contact</Link></li>
          </ul>
       </div>
 </>
