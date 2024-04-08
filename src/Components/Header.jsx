@@ -21,8 +21,8 @@ export default function Header() {
           <Link className="p-4 hover:text-[#1e2d4f]" to="">
             Home
           </Link>
-          <Link className="p-4 hover:text-[#1e2d4f]" to="/services">
-            Services
+          <Link className="p-4 hover:text-[#1e2d4f]" to="/Blog">
+            Blog
           </Link>
           <Link className="p-4 hover:text-[#1e2d4f]" to="/about">
             About
@@ -40,7 +40,7 @@ export default function Header() {
       <div className={` absolute md:hidden p-5 h-screen w-full bg-black text-white duration-300 text-center ${toggle ? 'right-0' : 'right-[-100%]'}`}>
          <ul>
             <li className='p-7 hover:text-[#1e2d4f]'><Link to="">Home</Link></li>
-            <li className='p-7 hover:text-[#1e2d4f]'><Link to="/services">Services</Link></li>
+            <li className='p-7 hover:text-[#1e2d4f]'><Link to="/services">Blog</Link></li>
             <li className='p-7 hover:text-[#1e2d4f]'><Link to="/about">About</Link></li>
             <li className='p-7 hover:text-[#1e2d4f]'><Link to="/contact">Contact</Link></li>
          </ul>
